@@ -1,0 +1,116 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+.main{
+    border:1px double green;
+    box-shadow: 2px 2px 2px aqua,-2px -2px 2px aqua;
+    outline: 4px dashed green;
+    width:50%;
+    height:95vh;
+    margin:auto;
+    border-radius:10px;
+    position:relative;
+    top:20px;
+    padding:20px;
+    background-image: linear-gradient(to right bottom,rgb(0, 128, 0,0.3),rgb(204, 70, 70,0.3));
+
+}
+.main p{
+    border:2px solid green;
+    outline:1px dotted black;
+    height:70px;
+    position:relative;
+    top:20px;
+    border-radius:10px;
+    font-size:35px;
+    padding:10px;
+    text-align:center;
+    word-spacing:20px;
+    letter-spacing:5px;
+    font-weight:bold;
+
+}
+.inputL{
+    border:1px solid black;
+    position:relative;
+    top:20px;
+    height:50px;
+    margin-top:5px;
+    width:550px;
+    border-radius:10px;
+    padding-left:20px;
+    font-size:22px;
+    outline:2px dashed green;
+}
+.add{
+    border:1px solid black;
+    float:right;
+    position:relative;
+    top:20px;
+    height:50px;
+    margin-top:5px;
+    width:80px;
+    border-radius:10px;
+    font-size:25px;
+    outline:2px dashed green;
+    padding:5px;
+    text-align:center;
+}
+.ulDiv{
+    border:2px double green;
+    height:400px;
+    position:relative;
+    top:40px;
+    border-radius:10px;
+    padding:20px;
+    outline:2px dashed green;
+}
+ul{
+    list-style:none;
+}
+ul li{
+    border:1px dashed black;
+    border-radius:10px;
+    height:40px;
+    padding:5px;
+    text-align:center;
+    font-size:25px;
+    margin:5px;
+}
+ul li:nth-child(odd){
+    background-color:rgb(10, 10, 255,0.1);
+}
+ul li:nth-child(even){
+    background-color:rgb(255, 0, 0,0.1);
+}
+ul li.checked{
+    background-color:rgb(54, 25, 25,0.1);
+    text-decoration:line-through;
+}
+
+ul li.checked::before{
+    content:"";
+    position:absolute;
+    border-color:black;
+    border-style:solid;
+    border-width:0 2px 2px 0;
+    left:35px;
+    transform:rotate(45deg);
+    height:15px;
+    width:7px;
+}
+.close{
+    position:absolute;
+    right:0px;
+    top:0px;
+    padding:12px 16px 12px 16px;
+}
+.ulDiv:after{
+    content:'';
+    display:table;
+    clear:both;
+
+}
